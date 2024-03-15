@@ -30,22 +30,9 @@ export default {
     },
   },
   colors: {
-    primary: "#FF5722",
-    white: "#f7f7f7",
-    gray_50: "#e0e0e0",
-    gray_200: "#CCCCCC",
-    gray_300: "#555",
-    gray_blue: "#E1E6E9",
-    yellow_300: "#FFD700",
-    purple_100: "#9C27B0",
-    purple_300: "#673AB7",
-    red_300: "#E57373",
-    black: "#333",
-    orange_200: "#FFA726",
-    orange_300: "#FF9800",
-    orange_400: "#FF7043",
-    orange_600: "#FF5722",
-
+    primary: "#64B5F6",         // Azul suave
+    secondary: "#B0BEC5",       // Cinza suave
+    background: "#FAFAFA",      // Branco cremoso
   },
   spacings: {
     xxxsmall: "0.6rem",
