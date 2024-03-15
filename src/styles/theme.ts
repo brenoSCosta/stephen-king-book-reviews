@@ -45,10 +45,7 @@ export default {
     orange_300: "#FF9800",
     orange_400: "#FF7043",
     orange_600: "#FF5722",
-    background_project: "#EDF1f3",
-    side_bar: "#10171A",
-    side_painel: "#2B363C",
-    side_button: "#333e44",
+
   },
   spacings: {
     xxxsmall: "0.6rem",
