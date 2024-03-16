@@ -8,8 +8,5 @@
     "endOfLine": "auto",
     "printWidth": 100,
     "tailwindConfig": "./tailwind.config.ts",
-    "pluginSearchDirs": false,
-    "plugins": [
-      "prettier-plugin-tailwindcss"
-  ]
+    "pluginSearchDirs": false
   }
