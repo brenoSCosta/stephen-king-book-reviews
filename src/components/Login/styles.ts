@@ -7,6 +7,9 @@ export const LoginFormContainer= styled.div`
     justify-content: center;
     align-items: center;
 `;
+export const LoginFormTitle = styled.div`
+  font-size: ${(props) => props.theme.font.sizes.medium};
+`;
 
 export const LoginFormDiv = styled.div`
     width: 50rem;
