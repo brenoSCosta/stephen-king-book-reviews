@@ -14,11 +14,12 @@ export default {
       "Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     light: 300,
     normal: 400,
+    semiBold: 600,
     bold: 700,
     sizes: {
-      xxxxsmall: "0.7rem",
-      xxxsmall: "1rem",
-      xxsmall: "1.2rem",
+      xxxxsmall: "0.9rem",
+      xxxsmall: "1.2rem",
+      xxsmall: "1.4rem",
       xsmall: "1.8rem",
       small: "2.2rem",
       medium: "2.8rem",
@@ -30,9 +31,12 @@ export default {
     },
   },
   colors: {
-    primary: "#64B5F6",         // Azul suave
-    secondary: "#B0BEC5",       // Cinza suave
-    background: "#FAFAFA",      // Branco cremoso
+    primary: "#5525f4",         
+    secondary: "#8e4106",
+    tertiary: '#6d5ba9',
+    background: "#e2ebf3",
+    content: '#1d2839',
+    neutral: '#7a879f',
   },
   spacings: {
     xxxsmall: "0.6rem",

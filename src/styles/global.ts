@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
       font-size: ${theme.font.sizes.medium};
-      background-color: ${theme.colors.background_project};
+      background-color: ${theme.colors.background};
       height: 100vh;
       width: 100vw;
     }
@@ -60,6 +60,7 @@ const GlobalStyles = createGlobalStyle`
 
   button {
     cursor: pointer;
+    border: none;
     background-color:initial;
   }
 

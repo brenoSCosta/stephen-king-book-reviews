@@ -1,8 +1,9 @@
 'use client'
 
-import Image from "next/image";
+import { LoginForm } from "@/components/Login";
+
 export default function Home() {
   return (
-   <>dsadsad</>
+   <LoginForm></LoginForm>
   );
 }
