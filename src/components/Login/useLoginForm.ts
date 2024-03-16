@@ -2,6 +2,8 @@ import { User } from '@/Types/User';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import { useContext } from 'react';
+import { AuthContext } from '@/contexts/AuthContext';
 
 const schema = z.object({
   name: z.string().refine((data) => data.trim() !== '', {
@@ -26,8 +28,14 @@ export const useLoginForm = () => {
     formState: { errors },
   } = useForm<User>({ resolver: zodResolver(schema) });
 
+  const context = useContext(AuthContext);
+
   const onSubmit: SubmitHandler<User> = async (data, event) => {
     event?.preventDefault();
+    context.signIn({
+      email: '',
+      password: '',
+    });
   };
 
   return { register, handleSubmit, errors, onSubmit };

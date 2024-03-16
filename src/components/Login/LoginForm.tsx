@@ -19,8 +19,10 @@ const LoginForm = () => {
           error={errors.name}
         />
         <Input label='Nosme' id='nasme' placeholder='Nosme' type='text' className='Input' />
-        <S.LoginButton $primary>Entrar</S.LoginButton>
-        <S.LoginButton>Cadastrar</S.LoginButton>
+        <S.LoginButton $primary type='submit'>
+          Entrar
+        </S.LoginButton>
+        <S.LoginButton type='button'>Cadastrar</S.LoginButton>
       </S.LoginForm>
     </S.LoginFormContainer>
   );
