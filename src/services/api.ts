@@ -1,18 +1,2 @@
-import axios from 'axios';
-import { parseCookies } from 'nookies';
-
-const { 'skbooks-token': token } = parseCookies();
-
-export const api = axios.create({
-  baseURL: 'http://localhost:3010',
-});
-
-api.interceptors.request.use((config) => {
-  console.log(config);
-
-  return config;
-});
-
-if (token) {
-  api.defaults.headers['Authorization'] = `Bearer ${token}`;
-}
+import { getAPIClient } from './axios';
+export const api = getAPIClient();
