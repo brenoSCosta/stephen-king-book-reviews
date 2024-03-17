@@ -16,3 +16,15 @@ export async function signInRequest(data: SignInRequestData) {
     },
   };
 }
+
+export async function recoverUserInformation() {
+  await delay();
+
+  return {
+    user: {
+      name: 'Breno S.',
+      email: 'breno@gmail.com',
+      avatar_url: 'https://github.com/brenoScosta.png',
+    },
+  };
+}
