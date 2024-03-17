@@ -1,13 +1,20 @@
 'use client';
 import { AuthContext } from '@/contexts/AuthContext';
+import { api } from '@/services/api';
 import Image from 'next/image';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 const page = () => {
   const context = useContext(AuthContext);
+
+  useEffect(() => {
+    api.get('/users');
+  });
+
   return (
     <div>
-      <Image src={context.user?.avatar_url ?? ''} alt='' width={200} height={200} />
+      {context.user?.name}
+      {/* <Image src={context.user?.avatar_url ?? ''} alt='' width={200} height={200} /> */}
     </div>
   );
 };

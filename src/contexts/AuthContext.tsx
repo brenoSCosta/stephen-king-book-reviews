@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from 'react';
 import { setCookie, parseCookies } from 'nookies';
 import { User } from '@/Types/User';
 import { useRouter } from 'next/navigation';
+import { api } from '@/services/api';
 
 type AuthContextType = {
   isAuthenticaded: boolean;
@@ -28,7 +29,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
   useEffect(() => {
     const { 'skbooks-token': token } = parseCookies();
-
     if (token) {
       recoverUserInformation().then((response) => {
         setUser(response.user);
@@ -45,6 +45,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
     setCookie(undefined, 'skbooks-token', token, {
       maxAge: 60 * 60 * 1, // 1 hour
     });
+
+    api.defaults.headers['Authorization'] = `Bearer ${token}`;
 
     setUser(user);
     router.push('/dashboard');
