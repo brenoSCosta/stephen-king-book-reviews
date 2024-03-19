@@ -6,6 +6,7 @@ export const Button = styled.button<{ $primary?: boolean }>`
   width: 70%;
   background-color: ${(props) =>
     props.$primary ? props.theme.colors.primary : props.theme.colors.secondary};
+  color: ${(props) => (props.$primary ? props.theme.colors.secondary : props.theme.colors.primary)};
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin: 1rem;
