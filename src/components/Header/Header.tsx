@@ -15,7 +15,7 @@ const Header = () => {
           </S.HeaderDescriptionText>
         </S.HeaderDescription>
         <S.ImageContainer>
-          <Image src={SKing} fill alt='Stephen king photo' />
+          <Image src={SKing} alt='Stephen king photo' style={S.imageStyle} />
         </S.ImageContainer>
       </S.Container>
     </>

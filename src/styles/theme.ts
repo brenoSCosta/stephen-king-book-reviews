@@ -9,6 +9,16 @@ export default {
   box: {
     shadow: '0 10px 10px rgba(0, 0, 0, 0.1)',
   },
+  devices: {
+    mobileS: '(max-width: 320px)',
+    mobileM: '(max-width: 375px)',
+    mobileL: '(max-width: 425px)',
+    tablet: '(max-width: 768px)',
+    laptop: '(max-width: 1024px)',
+    laptopL: '(max-width: 1440px)',
+    desktop: '(max-width: 2560px)',
+    desktopL: '(max-width: 2560px)',
+  },
   font: {
     family:
       "Merriweather,Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
