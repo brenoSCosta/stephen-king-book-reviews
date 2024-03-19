@@ -1,16 +1,20 @@
 import styled from 'styled-components';
-export const InfoBarButton = styled.button`
+export const Button = styled.button<{ $primary?: boolean }>`
   font-size: 1.1rem;
-  color: ${(props) => props.theme.colors.white};
-  background-color: ${(props) => props.theme.colors.orange_200};
+  color: white;
+  align-self: center;
+  width: 70%;
+  background-color: ${(props) =>
+    props.$primary ? props.theme.colors.primary : props.theme.colors.secondary};
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  border: none;
+  margin: 1rem;
   padding: 0.8rem 2rem;
-  border-radius: 50rem;
+  border-radius: 1.4rem;
   transition: all 0.4s;
-  &:focus,
+  height: 4rem;
+  /* &:focus, */
   &:hover {
-    background-color: ${(props) => props.theme.colors.orange_300};
+    opacity: 0.8;
   }
 `;

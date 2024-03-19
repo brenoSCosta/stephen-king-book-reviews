@@ -1,3 +1,4 @@
+import { Button } from '../Button';
 import { Input } from '../Input';
 import * as S from './styles';
 import { useLoginForm } from './useLoginForm';
@@ -19,10 +20,10 @@ const LoginForm = () => {
           error={errors.name}
         />
         <Input label='Nosme' id='nasme' placeholder='Nosme' type='text' className='Input' />
-        <S.LoginButton $primary type='submit'>
+        <Button typePrimary={true} type='submit'>
           Entrar
-        </S.LoginButton>
-        <S.LoginButton type='button'>Cadastrar</S.LoginButton>
+        </Button>
+        <Button type='button'>Cadastrar</Button>
       </S.LoginForm>
     </S.LoginFormContainer>
   );
