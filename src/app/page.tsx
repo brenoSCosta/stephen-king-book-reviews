@@ -1,7 +1,7 @@
 'use client';
 
-import { LoginForm } from '@/components/Login';
+import { LandingPage } from '@/components/LandingPage';
 
 export default function Home() {
-  return <LoginForm />;
+  return <LandingPage />;
 }

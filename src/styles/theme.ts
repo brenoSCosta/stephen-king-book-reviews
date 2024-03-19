@@ -11,11 +11,8 @@ export default {
   },
   font: {
     family:
-      "Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-    light: 300,
-    normal: 400,
-    semiBold: 600,
-    bold: 700,
+      "Merriweather,Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+    weight: { light: 300, normal: 400, semiBold: 600, bold: 700 },
     sizes: {
       xxxxsmall: '0.9rem',
       xxxsmall: '1.2rem',
@@ -31,11 +28,11 @@ export default {
     },
   },
   colors: {
-    primary: '#5525f4',
-    secondary: '#f97316',
-    tertiary: '#6d5ba9',
+    primary: '#287271',
+    secondary: '#F4A261',
+    tertiary: '#451ec7',
     background: '#e2ebf3',
-    content: '#1d2839',
+    content: '#5f63e3',
     neutral: '#7a879f',
     danger: '#ef4444',
     success: '#22c55e',
