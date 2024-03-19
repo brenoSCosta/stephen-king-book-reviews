@@ -14,6 +14,10 @@ const Header = () => {
             conhecidas, oferecemos análises breves e perspicazes para os fãs dedicados e os novatos
             curiosos. Venha descobrir os arrepios que só King sabe proporcionar!
           </S.HeaderDescriptionText>
+          <S.HeaderDescriptionText>
+            {' '}
+            Veja lista de livros para avaliar abaixo.
+          </S.HeaderDescriptionText>
           <Button type='button' typePrimary={false} name='Detalhes' />
         </S.HeaderDescription>
         <S.ImageContainer>

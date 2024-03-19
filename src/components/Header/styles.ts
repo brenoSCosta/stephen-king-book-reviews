@@ -6,11 +6,14 @@ export const Container = styled.div`
   color: ${(props) => props.theme.colors.secondary};
   background-color: ${(props) => props.theme.colors.primary};
   padding: 1rem;
+  gap: 10rem;
+  max-width: 100vw;
   @media ${(props) => props.theme.devices.tablet} {
     flex-direction: column;
     align-items: center;
     justify-content: start;
     padding: 0;
+    gap: 2rem;
   }
 `;
 export const HeaderDescription = styled.div`
@@ -23,15 +26,14 @@ export const HeaderDescription = styled.div`
     font-size: ${(props) => props.theme.font.sizes.small};
   }
 `;
-export const HeaderDescriptionTitle = styled.h3`
+export const HeaderDescriptionTitle = styled.h1`
   text-align: center;
-  font-size: ${(props) => props.theme.font.sizes.medium};
   @media ${(props) => props.theme.devices.tablet} {
     font-size: ${(props) => props.theme.font.sizes.small};
   }
 `;
 export const HeaderDescriptionText = styled.p`
-  font-size: ${(props) => props.theme.font.sizes.xxsmall};
+  font-size: ${(props) => props.theme.font.sizes.xsmall};
   margin-bottom: 2rem;
   margin-top: 2rem;
   text-align: justify;
@@ -43,11 +45,10 @@ export const HeaderDescriptionText = styled.p`
 
 export const ImageContainer = styled.div`
   position: relative;
+  width: '100%';
 `;
-export const ImageContainer2 = styled.div`
-  position: absolute;
-  width: 30rem;
-`;
+
 export const imageStyle = {
-  filter: 'drop-shadow(1px 1px 1px gray)',
+  filter: 'drop-shadow(2px 1px 1px gray)',
+  maxWidth: '100%',
 };
